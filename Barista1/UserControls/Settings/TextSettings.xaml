@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Barista1.UserControls.Settings.TextSettings"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:Barista1.UserControls.Settings"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+	<Grid Background="{DynamicResource Light}">
+		<StackPanel Margin="20 0 0 0">
+			<TextBlock Style="{DynamicResource FontM}" Margin="0 10 0 10" >Тема:</TextBlock>
+			<DockPanel>
+				<RadioButton x:Name="Strawb" GroupName="Themes"  Checked="RadioButton_Checked"  Style="{DynamicResource RadioButtonStyle1}" ></RadioButton>
+				<TextBlock  Style="{DynamicResource FontS}" Margin="20 0 0 0">Эспрессо с клубникой</TextBlock>
+			</DockPanel>
+			<DockPanel>
+				<RadioButton x:Name="Latte"   GroupName="Themes" Checked="RadioButton_Checked" Style="{DynamicResource RadioButtonStyle1}"></RadioButton>
+				<TextBlock  Style="{DynamicResource FontS}" Height="22" Margin="20 0 0 0">Мятный латте</TextBlock>
+			</DockPanel>
+		</StackPanel>
+		<!--<Ellipse x:Name="el"  Fill="{DynamicResource Dark}" Width="7" Height="7" >
+		</Ellipse>-->
+	</Grid>
+</UserControl>

@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="Barista1.UserControls.TestBase.QuestionUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Barista1.UserControls.TestBase"
+             mc:Ignorable="d" 
+             Height="220" Width="440"  Margin="3">
+	<Grid Background="{DynamicResource Light}" >
+		<Border CornerRadius="10" BorderThickness="2" BorderBrush="Blue">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="3*"/>
+					<RowDefinition Height="4*"/>
+				</Grid.RowDefinitions>
+				<DockPanel Grid.Row="0">
+					<StackPanel>
+						<TextBox x:Name="tbnumber" Width="30" Height="30" IsReadOnly="True" Background="{DynamicResource Light}" BorderThickness="1" BorderBrush="Blue" VerticalAlignment="Top"  Margin="5" Style="{DynamicResource FontMB}" />
+						<TextBox x:Name="tbpoint" Width="30" Height="30" IsReadOnly="True" Background="{DynamicResource Light}" VerticalAlignment="Bottom"  Margin="5" Style="{DynamicResource FontMB}"  Visibility="Hidden" BorderThickness="1" BorderBrush="Blue"/>
+					</StackPanel>
+					<TextBox x:Name="tbquestion" ScrollViewer.VerticalScrollBarVisibility="Auto" Background="{DynamicResource Light}"
+							 SpellCheck.IsEnabled="True" Language="ru-ru" Width="345" Margin="5" Style="{DynamicResource FontML}" BorderThickness="1" BorderBrush="Blue" TextWrapping="Wrap" IsReadOnly="True"/>
+		</DockPanel>
+				<Border Grid.Row="1" CornerRadius="10" BorderThickness="1" Margin="3" BorderBrush="Blue">
+					<Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition/>
+							<RowDefinition/>
+						</Grid.RowDefinitions>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition/>
+							<ColumnDefinition/>
+						</Grid.ColumnDefinitions>
+						<DockPanel Grid.Row="0" Grid.Column="0" Background="{DynamicResource Light}" Margin="3">
+							<RadioButton x:Name="rb1" GroupName="answers"  Style="{DynamicResource RadioButtonStyle1}" Checked="RadioButton_Checked"/>
+							<TextBox TextWrapping="Wrap" x:Name="tb1" BorderThickness="1" BorderBrush="Blue" IsReadOnly="True" Style="{DynamicResource FontMML}" Background="{DynamicResource Light}"/>
+						</DockPanel>
+						<DockPanel Grid.Row="0" Grid.Column="1" Background="{DynamicResource Light}" Margin="3">
+						<RadioButton x:Name="rb2" GroupName="answers"  Style="{DynamicResource RadioButtonStyle1}" Checked="RadioButton_Checked"/>
+							<TextBox TextWrapping="Wrap" x:Name="tb2" IsReadOnly="True" BorderThickness="1" BorderBrush="Blue" Style="{DynamicResource FontMML}" Background="{DynamicResource Light}"/>
+						</DockPanel>
+						<DockPanel Grid.Row="1" Grid.Column="0" Background="{DynamicResource Light}" Margin="3">
+								<RadioButton x:Name="rb3" GroupName="answers"  Style="{DynamicResource RadioButtonStyle1}" Checked="RadioButton_Checked"/>
+							<TextBox  TextWrapping="Wrap"  x:Name="tb3" IsReadOnly="True" BorderThickness="1" BorderBrush="Blue" Style="{DynamicResource FontMML}" Background="{DynamicResource Light}"/>
+							
+						</DockPanel>
+						<DockPanel Grid.Row="1" Grid.Column="1" Background="{DynamicResource Light}" Margin="3">
+									<RadioButton x:Name="rb4" GroupName="answers"  Style="{DynamicResource RadioButtonStyle1}" Checked="RadioButton_Checked"/>
+							<TextBox TextWrapping="Wrap" x:Name="tb4"  IsReadOnly="True" BorderThickness="1" BorderBrush="Blue" Style="{DynamicResource FontMML}" Background="{DynamicResource Light}"/>
+						</DockPanel>
+					</Grid>
+				</Border>
+			</Grid>
+		</Border>
+	</Grid>
+</UserControl>

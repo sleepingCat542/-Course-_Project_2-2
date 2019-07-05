@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Barista1.UserControls.Main.MainSettings"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Barista1.UserControls.Main"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+		<TextBlock  TextWrapping="Wrap"  Style="{DynamicResource FontM}" Foreground="{DynamicResource Dark}" Background="{DynamicResource Light}"  Padding="10">
+				В последнее время интерес к кофе растет, открывается много новых кофеен. К тому же многие из нас уже не могут представить свой день без чашечки ароматного эликсира бодрости.
+				А бариста – это настоящий специалист по приготовлению кофе. Даже если вы не хотите работать в этой сфере почему бы не побаловать себя или своего дорогого человека.
+				<LineBreak /><LineBreak />
+				Стать бариста может каждый – в этом нет большой сложности достаточно лишь энтузиазма. В Беларуси домашних бариста пока относительно мало, но их количество быстро растет.
+				Если вы хотите готовить дома великолепный кофе, вам не обязательно записываться на курсы, достаточно просто воспользоваться данным приложением.
+		</TextBlock>
+	</Grid>
+</UserControl>

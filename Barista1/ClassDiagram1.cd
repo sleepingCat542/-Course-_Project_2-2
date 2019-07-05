@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Barista1.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="1.75" Width="1.5" />
+    <AssociationLine Name="user" Type="Barista1.Classes.User" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="6.511" />
+        <Point X="5.5" Y="8.858" />
+        <Point X="7.728" Y="8.858" />
+        <Point X="7.728" Y="8.875" />
+        <Point X="8" Y="8.875" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAJAAAAAAAACgAAABDAAAAACUAAAiAAkACACAEAQA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="user" />
+      <Field Name="admin" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Barista1.SQLUsersRepository" BaseTypeListCollapsed="true">
+    <Position X="20.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Repository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Barista1.SQLAnswersRepository" BaseTypeListCollapsed="true">
+    <Position X="24.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Repository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Barista1.SQLCoctailsRepository" BaseTypeListCollapsed="true">
+    <Position X="25.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Repository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Barista1.SQLIngrAnswersRepository" BaseTypeListCollapsed="true">
+    <Position X="26.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Repository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Barista1.SQLQuestionsRepository" BaseTypeListCollapsed="true">
+    <Position X="24.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Repository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Barista1.SQLRecipeTestsRepository" BaseTypeListCollapsed="true">
+    <Position X="24.5" Y="10.75" Width="1.5" />
+    <AssociationLine Name="db" Type="Barista1.Classes.BaristaContext" FixedToPoint="true">
+      <Path>
+        <Point X="24.5" Y="11.5" />
+        <Point X="22.5" Y="11.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Repository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="db" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Barista1.SQLTestsRepository" BaseTypeListCollapsed="true">
+    <Position X="19.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Repository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="db" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Barista1.SQLTopicsRepository" BaseTypeListCollapsed="true">
+    <Position X="19" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Repository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Barista1.SQLVideosRepository" BaseTypeListCollapsed="true">
+    <Position X="21.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Repository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Barista1.UnitOfWork">
+    <Position X="22.25" Y="4.5" Width="1.5" />
+    <AssociationLine Name="usersRepository" Type="Barista1.SQLUsersRepository" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.25" Y="5.062" />
+        <Point X="21.312" Y="5.062" />
+        <Point X="21.312" Y="3.19" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="answersRepository" Type="Barista1.SQLAnswersRepository" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="23.562" Y="7.142" />
+        <Point X="23.562" Y="9.47" />
+        <Point X="24.75" Y="9.47" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="coctailsRepository" Type="Barista1.SQLCoctailsRepository" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="23.75" Y="6.375" />
+        <Point X="24.102" Y="6.375" />
+        <Point X="24.102" Y="6.375" />
+        <Point X="25.75" Y="6.375" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="testsRepository" Type="Barista1.SQLTestsRepository" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.25" Y="5.875" />
+        <Point X="21.875" Y="5.875" />
+        <Point X="21.875" Y="5.871" />
+        <Point X="20.75" Y="5.871" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="topicsRepository" Type="Barista1.SQLTopicsRepository" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.25" Y="5.625" />
+        <Point X="21.875" Y="5.628" />
+        <Point X="20.954" Y="5.628" />
+        <Point X="20.954" Y="3.845" />
+        <Point X="20.5" Y="3.845" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="recipeTestsRepository" Type="Barista1.SQLRecipeTestsRepository" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="23.312" Y="7.142" />
+        <Point X="23.312" Y="11.039" />
+        <Point X="24.5" Y="11.039" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="questionsRepository" Type="Barista1.SQLQuestionsRepository" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="23.75" Y="4.794" />
+        <Point X="25.5" Y="4.794" />
+        <Point X="25.5" Y="3.19" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="videosRepository" Type="Barista1.SQLVideosRepository" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.875" Y="7.143" />
+        <Point X="22.875" Y="7.308" />
+        <Point X="22.438" Y="7.308" />
+        <Point X="22.438" Y="7.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EBAAgCAAAAAAAAAAAAEAABIAAAQAAgAFYAAAgCAEAAg=</HashCode>
+      <FileName>UnitOfWork.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="usersRepository" />
+      <Field Name="answersRepository" />
+      <Field Name="coctailsRepository" />
+      <Field Name="testsRepository" />
+      <Field Name="topicsRepository" />
+      <Field Name="ingrAnswersRepository" />
+      <Field Name="recipeTestsRepository" />
+      <Field Name="questionsRepository" />
+      <Field Name="videosRepository" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Barista1.Regestration" BaseTypeListCollapsed="true">
+    <Position X="22.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAACAAAAAQAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows\Regestration.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="unitOfWork" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Barista1.Classes.Admin">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAgAAEAA=</HashCode>
+      <FileName>Classes\Admin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Barista1.Classes.BaristaContext">
+    <Position X="21" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\BaristaContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Barista1.Classes.Coctail" Collapsed="true">
+    <Position X="17.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAQAAAAAAAAAAAAEAgAAAAAAAA=</HashCode>
+      <FileName>Classes\Coctail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Barista1.Classes.Question">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAgABAABAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Classes\Question.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Barista1.Classes.User">
+    <Position X="8" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAIAAAAAAAAAgAAAAAgAAEAA=</HashCode>
+      <FileName>Classes\Users.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Barista1.UserControls.Base.TextBase" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgEAgABAABAAAUACAgAAAAAAAQAARQ=</HashCode>
+      <FileName>UserControls\Base\TextBase.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="admin" />
+      <Field Name="user" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Barista1.UserControls.Coctails.CoctailsAdminWindow" BaseTypeListCollapsed="true">
+    <Position X="17.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAgAAAgAAAAAAAAAAAAAQAAAAAIAAAA=</HashCode>
+      <FileName>UserControls\Coctails\CoctailsAdminWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="coctail" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Barista1.UserControls.RecipesTest.TestRecipesNames" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYCgAQCAAgAAMAhEAAKBAAgAEAUCCAgAEAAAAAAAARQ=</HashCode>
+      <FileName>UserControls\RecipesTest\TestRecipesNames.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="admin" />
+      <Field Name="user" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Barista1.UserControls.RecipesTest.TextRecipesTest" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <AssociationLine Name="user" Type="Barista1.Classes.User" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.25" Y="4.723" />
+        <Point X="12.25" Y="10.748" />
+        <Point X="9.438" Y="10.748" />
+        <Point X="9.438" Y="10.373" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="admin" Type="Barista1.Classes.Admin" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.25" Y="1.5" />
+        <Point X="12.25" Y="0.831" />
+        <Point X="10" Y="0.831" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAIgEAAABAAgAAAUAAAgAAAAAAAAAARA=</HashCode>
+      <FileName>UserControls\RecipesTest\TextRecipesTest.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="user" />
+      <Field Name="admin" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Barista1.UserControls.TestBase.QuestionUserControl" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAACAAAAAgEQAAAAAAAAAQAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>UserControls\TestBase\QuestionUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="question" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Barista1.UserControls.TestBase.TextTestBase" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYDAAACEAAAAAAhEgACBAEBAAAUACAgAEAAAAIAAERQ=</HashCode>
+      <FileName>UserControls\TestBase\TextTestBase.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="admin" />
+      <Field Name="user" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Barista1.Classes.Topic">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Topic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Barista1.UserControls.Base.BaseAdminWindow" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAACAAAAIACAA=</HashCode>
+      <FileName>UserControls\Base\BaseAdminWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="topicInBD" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

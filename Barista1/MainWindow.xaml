@@ -1,0 +1,152 @@
+﻿<Window x:Class="Barista1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:Barista1"
+        mc:Ignorable="d"
+        Title="Наставник Бариста" Height="700" Width="1200" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Icon="img/total/c.ico" >
+	<Grid>
+
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="15*"/>
+			<ColumnDefinition Width="40*"/>
+			<ColumnDefinition Width="15*"/>
+		</Grid.ColumnDefinitions>
+		<Grid Grid.Column="0">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="43*"></RowDefinition>
+				<RowDefinition Height="2*"></RowDefinition>
+			</Grid.RowDefinitions>
+			<StackPanel Grid.Column="0" Panel.ZIndex="2" Background="{DynamicResource Dark}" Style="{StaticResource spSlideLeft}" x:Name="spLeft"  Width="325" Margin="0 0 200 0">
+				<DockPanel>
+					<ToggleButton x:Name="menuButton" Style="{StaticResource MaterialDesignSwitchLightToggleButton}" Height="40" Width="50" Background="{DynamicResource Light}" HorizontalAlignment="Left"/>
+				</DockPanel>
+				<DockPanel Style="{DynamicResource MenuItem}"  >
+					<Button Click="Main_Click"  Background="{DynamicResource Dark}" Height="40">
+						<DockPanel HorizontalAlignment="Left" Width="300" Margin="-17 0 0 0">
+							<materialDesign:PackIcon Kind="LaptopMac" Style="{DynamicResource MenuImg}"/>
+							<Label Style="{DynamicResource MenuLabel}" Content="Главная" />
+						</DockPanel>
+					</Button>
+				</DockPanel>
+
+				<DockPanel Style="{DynamicResource MenuItem}" >
+					<Button Click="Base_Click" Background="{DynamicResource Dark}"  Height="40" >
+						<DockPanel HorizontalAlignment="Left" Width="300" Margin="-17 0 0 0">
+							<materialDesign:PackIcon Kind="Notebook" Style="{DynamicResource MenuImg}"  />
+							<Label Style="{DynamicResource MenuLabel}" Content="Основы профессии" />
+						</DockPanel>
+					</Button>
+				</DockPanel>
+
+				<DockPanel Style="{DynamicResource MenuItem}">
+					<Button  Click="Сocktail_Click" Background="{DynamicResource Dark}"  Height="40">
+						<DockPanel HorizontalAlignment="Left" Width="300" Margin="-17 0 0 0">
+							<materialDesign:PackIcon Kind="GlassTulip" Style="{DynamicResource MenuImg}"/>
+							<Label Style="{DynamicResource MenuLabel}" Content="Коктейли"/>
+						</DockPanel>
+					</Button>
+				</DockPanel>
+
+				<DockPanel x:Name="Test" Style="{DynamicResource MenuItem}">
+					<Button Click="Test_Click" Background="{DynamicResource Dark}"  Height="40">
+						<DockPanel HorizontalAlignment="Left" Width="300" Margin="-17 0 0 0">
+							<!--<Image x:Name="ibt"  Source="Themes/img/forStrawberry/test.png" Style="{DynamicResource MenuImg}"/>-->
+							<materialDesign:PackIcon Kind="CheckCircleOutline" Style="{DynamicResource MenuImg}"/>
+							<Label Style="{DynamicResource MenuLabel}" Content="Основные тесты"/>
+						</DockPanel>
+					</Button>
+				</DockPanel>
+
+				<DockPanel x:Name="TestCoc" Style="{DynamicResource MenuItem}">
+					<Button Click="TestRecipes_Click" Background="{DynamicResource Dark}"  Height="40">
+						<DockPanel HorizontalAlignment="Left" Width="300" Margin="-17 0 0 0">
+							<!--<Image x:Name="itr" x:FieldModifier="public" Source="Themes/img/forStrawberry/rtest.png" Style="{DynamicResource MenuImg}"/>-->
+							<materialDesign:PackIcon Kind="CheckboxMultipleMarkedOutline" Style="{DynamicResource MenuImg}"/>
+							<Label Style="{DynamicResource MenuLabel}" Content="Тесты рецептов" />
+						</DockPanel>
+					</Button>
+				</DockPanel>
+
+				<DockPanel x:Name="Video" Style="{DynamicResource MenuItem}">
+					<Button Click="Video_Click"  Background="{DynamicResource Dark}"  Height="40">
+						<DockPanel HorizontalAlignment="Left" Width="300" Margin="-17 0 0 0">
+							<materialDesign:PackIcon Kind="Video" Style="{DynamicResource MenuImg}"/>
+							<Label Style="{DynamicResource MenuLabel}" Content="Видео-уроки"/>
+						</DockPanel>
+					</Button>
+				</DockPanel>
+				
+				<DockPanel x:Name="SettingsDock" Style="{DynamicResource MenuItem}">
+					<Button Click="Settings_Click"  Background="{DynamicResource Dark}"  Height="40">
+						<DockPanel HorizontalAlignment="Left" Width="300" Margin="-17 0 0 0">
+							<materialDesign:PackIcon Kind="Settings" Style="{DynamicResource MenuImg}"/>
+							<Label Style="{DynamicResource MenuLabel}" Content="Настройки"/>
+						</DockPanel>
+					</Button>
+				</DockPanel>
+			</StackPanel>
+
+			<StackPanel Background="{DynamicResource ColorT}" Grid.Column="0" Panel.ZIndex="0" Orientation="Vertical" Width="200" HorizontalAlignment="Right"  >
+				<Ellipse Width="120" Height="120" StrokeThickness="1" Margin="0 20 0 0" Stroke="Brown">
+					<Ellipse.Fill>
+						<ImageBrush x:Name="image" Stretch="UniformToFill" AlignmentX="Center" AlignmentY="Center" />
+					</Ellipse.Fill>
+				</Ellipse>
+				<TextBlock x:Name="txbLogin" Foreground="#543318" Style="{DynamicResource FontM}" Text="Аккаунт" TextAlignment="Center" VerticalAlignment="Center" Margin="10"/>
+				<Button x:Name="btnGoToTestsResult" Content="Знание основ"    Style="{DynamicResource ProfButton}" Click="BtnGoToResult_Click"/>
+				<Button x:Name="btnGoToRecResult" Content="Знание коктейлей"  Style="{DynamicResource ProfButton}" Click="BtnGoToRecResult_Click"/>
+				<Button x:Name="btnImageChange" Content="Изменить фото" Style="{DynamicResource ProfButton}" Click="btnUpdateImage_Click" />
+				<Button x:Name="btnExitToProfile" Content="Сменить пользователя"  Style="{DynamicResource ProfButton}" Click="btnChangeProfile_Click" />
+			</StackPanel>
+			<TextBlock Grid.Row="1" Background="{DynamicResource Dark}"></TextBlock>
+		</Grid>
+
+		<Grid Grid.Column="1">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="5*"></RowDefinition>
+				<RowDefinition Height="38*"></RowDefinition>
+				<RowDefinition Height="2*"></RowDefinition>
+			</Grid.RowDefinitions>
+
+			<Grid x:Name="WindowHeader" Grid.Row="0">
+				<TextBlock x:Name="TitleWin"  Style="{DynamicResource FontB}" Background="{DynamicResource Light}" Foreground="{DynamicResource Dark}" TextAlignment="Center" Padding="5">
+				Наставник бариста
+				</TextBlock>
+			</Grid>
+
+			<Grid x:Name="WindowText" Background="{DynamicResource Light}" Grid.Row="1">
+				<TextBlock  TextWrapping="Wrap"  Style="{DynamicResource FontM}" Foreground="{DynamicResource Dark}" Background="{DynamicResource Light}"  Padding="10">
+				В последнее время интерес к кофе растет, открывается много новых кофеен. К тому же многие из нас уже не могут представить свой день без чашечки ароматного эликсира бодрости.
+				А бариста – это настоящий специалист по приготовлению кофе. Даже если вы не хотите работать в этой сфере почему бы не побаловать себя или своего дорогого человека.
+				<LineBreak /><LineBreak />
+				Стать бариста может каждый – в этом нет большой сложности достаточно лишь энтузиазма. В Беларуси домашних бариста пока относительно мало, но их количество быстро растет.
+				Если вы хотите готовить дома великолепный кофе, вам не обязательно записываться на курсы, достаточно просто воспользоваться данным приложением.
+				</TextBlock>
+			</Grid>
+			<TextBlock Grid.Row="2" Background="{DynamicResource Dark}">
+					<TextBlock  Style="{DynamicResource DeveloperText}" VerticalAlignment="Bottom"  Text=" Хадасевич Ю.А. 4 группа"/>
+				</TextBlock>
+		</Grid>
+		<Grid Grid.Column="2">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="5*"></RowDefinition>
+				<RowDefinition Height="38*"></RowDefinition>
+				<RowDefinition Height="2*"></RowDefinition>
+			</Grid.RowDefinitions>
+
+			<Grid x:Name="WindowAdmin" Background="{DynamicResource Light}" Grid.Row="0">
+			</Grid>
+			<Grid x:Name="WindowImg" Grid.Row="1" Background="{DynamicResource Light}">
+				<TextBlock  Background="{DynamicResource Light}">
+			<Image Source="img/mainWindow/main.png" Margin="0 40 0 0"></Image>
+				</TextBlock>
+			</Grid>
+			<TextBlock Grid.Row="2"  Background="{DynamicResource Dark}">
+			<TextBlock Style="{DynamicResource DeveloperText}"  Text="2019" ></TextBlock>
+				</TextBlock>
+		</Grid>
+	</Grid>
+</Window>

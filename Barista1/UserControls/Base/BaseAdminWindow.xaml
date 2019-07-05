@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="Barista1.UserControls.Base.BaseAdminWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:Barista1.UserControls.Base"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+	<Grid Background="{DynamicResource Light}">
+		<ScrollViewer>
+			<StackPanel>
+				<TextBlock Text="Создание темы" Style="{DynamicResource FontM}" Foreground="{DynamicResource Dark}" Background="{DynamicResource Light}" Height="50" VerticalAlignment="Center" TextAlignment="Center"/>
+				<StackPanel>
+					<Label Style="{DynamicResource MLabel}">Название темы:</Label>
+					<TextBox x:Name="txtTitleTopic" IsReadOnly="False"  Style="{DynamicResource TopicText}" Height="30" TextWrapping="Wrap"></TextBox>
+				</StackPanel>
+				<StackPanel>
+					<Label Style="{DynamicResource MLabel}">Текст темы:</Label>
+					<TextBox x:Name="txtTextTopic"  IsReadOnly="False"   Style="{DynamicResource TopicText}" TextWrapping="Wrap" Height="400"></TextBox>
+				</StackPanel>
+				<DockPanel>
+					<Button Grid.Column="0" Style="{DynamicResource AddTopicButton}" Width="auto" Click="btnSave">Сохранить</Button>
+				</DockPanel>
+		</StackPanel>
+		</ScrollViewer>
+	</Grid>
+</UserControl>

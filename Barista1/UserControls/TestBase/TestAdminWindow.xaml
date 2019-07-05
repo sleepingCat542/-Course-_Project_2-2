@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="Barista1.UserControls.TestBase.TestAdminWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Barista1.UserControls.TestBase"
+             mc:Ignorable="d" 
+             Height="auto" Width="auto">
+	<Grid Background="{DynamicResource Light}">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="7*"/>
+			<RowDefinition Height="22*"/>
+			<RowDefinition Height="11*"/>
+		</Grid.RowDefinitions>
+		<StackPanel Grid.Row="0" Margin="0">
+			<TextBlock Text="Название теста" HorizontalAlignment="Center" Style="{DynamicResource FontM}"/>
+			<Border Height="30" CornerRadius="5" BorderBrush="Gray" BorderThickness="2" UseLayoutRounding="True" Margin="30 0">
+				<TextBox x:Name="txbTestName" Height="25"  Style="{DynamicResource FontMB}" BorderThickness="0"  VerticalContentAlignment="Center"/>
+			</Border>
+		</StackPanel>
+		<StackPanel Grid.Row="1"  Margin="5">
+			<TextBlock Text="Вопросы" HorizontalAlignment="Center" Style="{DynamicResource FontM}"/>
+			<ScrollViewer Height="250">
+				<StackPanel x:Name="AnswerStack"></StackPanel>
+			</ScrollViewer>
+		</StackPanel>
+		<Button Grid.Row="2" x:Name="btnAddAnswer" Background="Blue" Height="40" Width="40"  Style="{DynamicResource AddTopicButton}" Margin="110 0 110 110" Click="btnAddAnswer_Click">
+			<TextBlock Text="+"  Height="20" TextAlignment="Center" Margin="0 0 0 10"/>
+		</Button>
+		<Button Grid.Row="2"  x:Name="btnSave" Height="50" Style="{DynamicResource AddTopicButton}" Margin="30 45 30 60" Click="btnSave_Click">
+			<TextBlock Text="Сохранить"  Style="{DynamicResource FontM}" TextAlignment="Center" />
+		</Button>
+	</Grid>
+</UserControl>
